@@ -32,7 +32,7 @@ Note: if you ever need to validate an email using a regex in practice, the Inter
 
 const validateEmail = (email) => {
   // Solution code here...
-  if(/^\w+\.?\w+?@[a-zA-Z_]+?\.[a-zA-Z]{3,3}$/.test(email)) return true;
+  if (/^\w+\.?\w+?@[a-zA-Z_]+?\.[a-zA-Z]{3,3}$/.test(email)) return true;
   return false;
 
 };
@@ -59,9 +59,7 @@ Return either true or false.
 ------------------------------------------------------------------------------------------------ */
 
 const validatePhoneNumber = (phoneNumber) => {
-  // Solution code here...
-  if(/^((\(\d{3}\) ?)|(\d{3}-))?\d{3}-\d{4}/.test(phoneNumber)) return true;
-  return false
+  return /^(1\W)?(\(\d{3}\)|\d{3})\W?\d{3}\W?\d{4}$/.test(phoneNumber);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -117,7 +115,7 @@ describe('Testing challenge 2', () => {
     expect(validateEmail('joe.schmoe@codefellows.net')).toBeTruthy();
   });
 
-  test ('It should fail things that aren\'t email addresses', () => {
+  test('It should fail things that aren\'t email addresses', () => {
     expect(validateEmail('justastring')).toBeFalsy();
     expect(validateEmail('missing@adomain')).toBeFalsy();
     expect(validateEmail('@noname.com')).toBeFalsy();
@@ -130,7 +128,7 @@ describe('Testing challenge 2', () => {
   });
 });
 
-xdescribe('Testing challenge 3', () => {
+describe('Testing challenge 3', () => {
   test('It should match the acceptable phone number formats', () => {
     expect(validatePhoneNumber('(555) 555-5555')).toBeTruthy();
     expect(validatePhoneNumber('555 555-5555')).toBeTruthy();
@@ -156,9 +154,9 @@ xdescribe('Testing challenge 3', () => {
 
 xdescribe('Testing challenge 4', () => {
   test('It should return the closing tags', () => {
-    expect(findTagNames(['<h1>Hello, world!</h1>', '<p>Welcome to my site</p>'])).toStrictEqual([ '/h1', '/p' ]);
+    expect(findTagNames(['<h1>Hello, world!</h1>', '<p>Welcome to my site</p>'])).toStrictEqual(['/h1', '/p']);
   });
   test('It should work if there are multiple closing tags in a single string', () => {
-    expect(findTagNames(['<div><h1>Hello, world!</h1></div>', '<p>Welcome to my site</p>'])).toStrictEqual([ '/h1', '/div', '/p' ]);
+    expect(findTagNames(['<div><h1>Hello, world!</h1></div>', '<p>Welcome to my site</p>'])).toStrictEqual(['/h1', '/div', '/p']);
   });
 });
