@@ -23,8 +23,8 @@ const alkiBeach = [33, 31, 147, 130, 27, 93, 38, 126, 141, 63, 46, 17];
 const cookieStores = [firstPike, seaTac, seattleCenter, capHill, alkiBeach];
 
 const grandTotal = (stores) => {
-  let arrayOfSum = stores[0];
-  for (let i = 1; i < stores.length; i++) {
+  let arrayOfSum = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+  for (let i = 0; i < stores.length; i++) {
     stores[i].forEach((item, index) => {
       arrayOfSum[index] += item;
     })
@@ -45,11 +45,9 @@ Write a function named salesData that uses forEach to iterate over the hourlySal
 
 const salesData = (hours, data) => {
   let formattedData = [];
-  console.log(data);
-
   data.forEach((item, index) => {
     let tempObj = {
-      sales: item +' cookies',
+      sales: item + ' cookies',
       time: hours[index]
     }
     formattedData.push(tempObj);
@@ -210,6 +208,21 @@ For example, excel('1,1,1\n4,4,4\n9,9,9') returns [3, 12, 27].
 ------------------------------------------------------------------------------------------------ */
 
 const excel = (str) => {
+  let array = [];
+  let sum = 0;
+
+  str.split('').forEach(item => {
+    if (item === '\n') {
+      array.push(sum);
+      sum = 0;
+    } else if (item !== ',') {
+      sum += parseInt(item);
+    }
+  })
+  array.push(sum);
+
+  return array;
+
 
 
 
@@ -306,7 +319,7 @@ describe('Testing challenge 7', () => {
   });
 });
 
-xdescribe('Testing challenge 8', () => {
+describe('Testing challenge 8', () => {
   test('It should return the total count for each row', () => {
     let result = excel('1,1,1\n4,4,4\n9,9,9');
     expect(result.length).toStrictEqual(3);
