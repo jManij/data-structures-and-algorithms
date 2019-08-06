@@ -1,7 +1,5 @@
-Table of Contents
-
 # Reverse an Array
-<!-- Short summary or background information -->
+The function reverses the array.
 
 ## Challenge
 Given an array of integers, the method reverses the contents of the array and return the reversed array.
