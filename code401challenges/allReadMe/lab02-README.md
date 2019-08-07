@@ -1,5 +1,6 @@
 # Shift an Array
 Insert and Shift an array in middle at index.
+[Link to code](../src/main/java/code401challenges/ArrayShift.java)
 
 ## Challenge
 Given an array of integers and value to be inserted,

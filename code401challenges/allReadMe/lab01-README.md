@@ -1,5 +1,6 @@
 # Reverse an Array
 The function reverses the array.
+[Link to code](../src/main/java/code401challenges/ArrayReverse.java)
 
 ## Challenge
 Given an array of integers, the method reverses the contents of the array and return the reversed array.
