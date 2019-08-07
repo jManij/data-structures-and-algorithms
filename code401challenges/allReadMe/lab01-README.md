@@ -11,4 +11,4 @@ Given an array of integers, the method reverses the contents of the array and re
 - Time complexity and space complexity is O(n)
 
 ## Solution
-![](./assets/lab01.jpeg)
+![](../assets/lab01.jpeg)
