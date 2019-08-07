@@ -7,8 +7,10 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class LibraryTest {
-    @Test public void testSomeLibraryMethod() {
-        Library classUnderTest = new Library();
-        assertTrue("someLibraryMethod should return 'true'", classUnderTest.someLibraryMethod());
+    @Test public void testArrayShiftMethod() {
+        ArrayShift classUnderTest = new ArrayShift();
+        assertArrayEquals("Output should be an array",new int[]{4, 8, 15, 16, 23, 42}, classUnderTest.arrayShift((new int[]{4,8,15,23,42}), 16));
+
     }
 }
+
