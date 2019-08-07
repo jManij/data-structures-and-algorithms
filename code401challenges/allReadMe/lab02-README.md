@@ -12,4 +12,4 @@ the method inserts the value on the middle of the given array.
 - Time complexity and space complexity is O(n)
 
 ## Solution
-![](../assets/lab02.png)
+![](../assets/lab-02.png)
