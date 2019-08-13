@@ -1,5 +1,5 @@
 # Singly Linked List
-Implementatin of Singly Linked list
+Implementation of Singly Linked list
 
 ## Challenge
 Create three methods to implement a linked list: insert, includes and toString
