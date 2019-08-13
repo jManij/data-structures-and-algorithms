@@ -56,41 +56,68 @@ public class Library {
 
         public String toString() {
             Node temp = head;
-            String returnString = "";
+            String returnString = "HEAD";
             while (temp != null) {
-                returnString += Integer.toString(temp.value) + " ";
+                returnString += " -> " + Integer.toString(temp.value);
                 temp = temp.next;
             }
             if (returnString.isEmpty()) {
-                returnString = "{}";
+                returnString += " -> NULL";
             }
-            return returnString;
+            return returnString + " -> NULL";
         }
+
+        public void append(int value) {
+            Node temp = head;
+            Node newNode = new Node(value);
+
+            while (temp.next != null) {
+                temp = temp.next;
+
+            }
+            temp.next = newNode;
+
+        }
+
+        public void insertBefore (int value, int newValue) {
+            Node newNode = new Node(newValue);
+            //Edge case: first element on the linked list is the value
+            if (head.value == value) {
+                Node temp = head;
+                head = newNode;
+                newNode.next = temp;
+                return;
+            }
+            Node current = head;
+            while (current != null) {
+                if (current.next != null && current.next.value == value) {
+                    newNode.next = current.next;
+                    current.next = newNode;
+                    return;
+
+                }
+                current = current.next;
+            }
+
+        }
+
+        public void insertAfter(int value, int newValue) {
+            Node newNode = new Node(newValue);
+            Node current = head;
+
+            while (current != null) {
+                if (current.value == value) {
+                    newNode.next = current.next;
+                    current.next = newNode;
+                    return;
+                }
+                current = current.next;
+            }
+        }
+
+
+
     }
 
-    public static void main (String[] args) {
 
-        LinkedList list = new LinkedList();
-        System.out.println(list.toString());
-        list.insert(5);
-        list.insert(6);
-        list.insert(7);
-        list.insert(8);
-        list.insert(11);
-        list.insert(13);
-
-        System.out.println(list.toString());
-        System.out.print(list.includes(111));
-
-
-
-
-
-
-
-
-
-
-
-    }
 }
