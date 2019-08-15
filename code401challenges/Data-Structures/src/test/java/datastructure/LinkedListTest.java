@@ -138,26 +138,25 @@ public class LinkedListTest {
     }
 
 
-    @Test public void mergeListTest() {
+    @Test public void mergeListAllTest() {
 
         // list 1
         list1.insert(1);
         list1.insert(3);
-        list1.insert(2);
-
+        list1.insert(5);
 
         // list 2
-        list2.insert(5);
-        list2.insert(9);
+        list2.insert(2);
         list2.insert(4);
-//        list2.insert(4);
+        list2.insert(6);
 
 
-
-
-        assertEquals("HEAD -> 1 -> 5 -> 3 -> 9 -> 2 -> 4 -> NULL", list1.mergeLists(list1, list2).toString());
-
-//        assertEquals("", list1.mergeLists(list1, list2).toString());
+        assertEquals("The lists should be merged together alternately","HEAD -> 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> NULL", list1.mergeLists(list1, list2).toString());
+        list1.insert(7);
+        assertEquals("The lists should be merged together alternatively", "HEAD -> 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> NULL", list1.mergeLists(list1, list2).toString());
+        list2.insert(8);
+        list2.insert(9);
+        assertEquals("HEAD -> 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9 -> NULL", list1.mergeLists(list1, list2).toString());
 
     }
 

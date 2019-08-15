@@ -149,34 +149,22 @@ public  class LinkedList {
         Node firstList = list1.head;
         Node secondList = list2.head;
 
-        while(firstList != null && secondList != null) {
+        while(firstList != null || secondList != null) {
             if(firstList != null) {
-                System.out.print(firstList.value + " ");
                 mergedList.insert(firstList.value);
+                firstList = firstList.next;
                 if(secondList != null) {
                     mergedList.insert(secondList.value);
-                    System.out.print(secondList.value + " ");
+                    secondList = secondList.next;
                 }
-
-
             }
             else if(secondList != null) {
                 mergedList.insert(secondList.value);
-
+                secondList = secondList.next;
             }
-
-            if (firstList != null)
-            firstList = firstList.next;
-
-            if (secondList != null)
-            secondList = secondList.next;
-
         }
-
         return mergedList;
     }
-
-
 
 }
 
