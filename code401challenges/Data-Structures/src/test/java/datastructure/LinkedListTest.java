@@ -9,9 +9,12 @@ import static org.junit.Assert.*;
 
 public class LinkedListTest {
     LinkedList list = new LinkedList();
+    LinkedList list1 = new LinkedList();
+    LinkedList list2 = new LinkedList();
 
     @Before
     public void initializeForTest() {
+
         list.insert(1);
         list.insert(4);
         list.insert(7);
@@ -23,8 +26,22 @@ public class LinkedListTest {
         list.insert(37);
         list.insert(59);
         list.insert(60);
-    }
 
+
+        list1.insert(2);
+        list1.insert(3);
+        list1.insert(1);
+
+
+
+        list2.insert(4);
+        list2.insert(9);
+        list2.insert(5);
+
+
+
+
+    }
 
 
     //Check to see if empty linked list gets created
@@ -131,8 +148,15 @@ public class LinkedListTest {
         assertEquals("It should return -1 for index that is out of bound",-1, smallList.kFromEnd(-1));
         assertEquals("It should return -1 for index that is out of bound",-1, smallList.kFromEnd(5));
 
+    }
 
 
+    @Test public void mergeListTest() {
+        LinkedList l = new LinkedList();
+        System.out.println(list1.toString());
+        System.out.println(list2.toString());
+
+        System.out.println(l.mergeLists(list1, list2).toString());
 
     }
 

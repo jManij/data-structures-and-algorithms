@@ -141,6 +141,67 @@ public  class LinkedList {
     }
 
 
+    public LinkedList mergeLists(LinkedList list1, LinkedList list2) {
+
+        //Check for edge cases
+
+        int l1 = 0; // length of the first list
+        int l2 = 0; // length of the second list
+        LinkedList mergedList = new LinkedList();
+
+        Node current = list1.head;
+        //Get length for the first list
+        while (current != null) {
+            l1++;
+            current = current.next;
+        }
+
+        //Get length for the second list
+        current = list2.head;
+        while (current != null) {
+            l2++;
+            current = current.next;
+        }
+
+        Node firstList = list1.head;
+        Node secondList = list2.head;
+        int totalIndex = l1 + l2;
+        int i = 0;
+        while(i < totalIndex){
+            if(firstList != null) {
+                System.out.print(firstList.value + " ");
+                i++;
+                mergedList.insert(firstList.value);
+                if(secondList != null) {
+                    mergedList.insert(secondList.value);
+                    System.out.print(secondList.value + " ");
+                    i++;
+                }
+
+
+            }
+            else if(secondList != null) {
+                i++;
+                mergedList.insert(secondList.value);
+            }
+
+            if (firstList != null)
+            firstList = firstList.next;
+
+            if (secondList != null)
+            secondList = secondList.next;
+
+        }
+
+
+
+        return mergedList;
+
+
+
+    }
+
+
 
 }
 
