@@ -1,8 +1,8 @@
 # Challenge Summary
-Linked List Implementation Extended
+Linked List Implementation Extended.
 
 ## Challenge Description
-Create a method for the Linked List class which takes a number, k, as a parameter. Return the node’s value that is k from the end of the linked list. 
+Create a method for the Linked List class which takes two linked lists, merge them alternatively and return the new merged list.
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
