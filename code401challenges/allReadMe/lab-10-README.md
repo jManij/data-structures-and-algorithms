@@ -10,4 +10,4 @@ O(N) since at worst scenario, we iterate over the whole list for time complexity
 O(1) for space complexity since we are not storing the contents of the linked list when we traverse.
 ## Solution
 <!-- Embedded whiteboard image -->
-![](../assets/lab-11.jpg)
+![](../assets/lab-10.jpg)
