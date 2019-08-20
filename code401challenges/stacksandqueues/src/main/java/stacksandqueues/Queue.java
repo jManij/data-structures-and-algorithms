@@ -11,7 +11,7 @@ public class Queue {
     }
 
     //Checks to see if a queue is empty
-    public Boolean isEmpty() {
+    public boolean isEmpty() {
         if(front == null) {
             return true;
         }
