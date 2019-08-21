@@ -9,4 +9,4 @@ O(1) since at worst scenario, we have reference to the first element
 O(1) for space complexity since we are not storing the contents of the linked list when we traverse.
 ## Solution
 <!-- Embedded whiteboard image -->
-![](../assets/lab-11.jpg)
+![](../assets/challenge-11.jpg)
