@@ -106,6 +106,27 @@ public class StackandQueueTest {
 
     }
 
+    @Test
+    public void pseudoQueueTest() {
+        PseudoQueue pseudoQueue = new PseudoQueue();
+
+        for (int i = 0; i < 25; i++) {
+            pseudoQueue.enqueue(i);
+        }
+        pseudoQueue.dequeue();
+        pseudoQueue.dequeue();
+
+        assertTrue("The method should peek the first value in the stack", pseudoQueue.peek().equals(2));
+        pseudoQueue.dequeue();
+        pseudoQueue.dequeue();
+        assertTrue("The method should peek the first value in the stack", pseudoQueue.peek().equals(4));
+        assertTrue("The method should peek the first value in the stack", pseudoQueue.peek().equals(4));
+
+        pseudoQueue.enqueue(26);
+        assertEquals("The method should return the value that has been dequed from the queue","4", pseudoQueue.dequeue().toString());
+        assertTrue("The method should peek the first value in the queue", pseudoQueue.peek().equals(5));
+
+    }
 
 
 }
