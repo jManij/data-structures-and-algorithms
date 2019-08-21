@@ -5,7 +5,7 @@ public class Queue {
     Node rear;
 
     //Empty Queue
-    Queue() {
+    public Queue() {
         this.front = null;
         this.rear = null;
     }

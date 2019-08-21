@@ -2,6 +2,7 @@ package stacksandqueues;
 
 import org.junit.Before;
 import org.junit.Test;
+import utilities.AnimalShelter;
 
 import static org.junit.Assert.*;
 
@@ -125,6 +126,35 @@ public class StackandQueueTest {
         pseudoQueue.enqueue(26);
         assertEquals("The method should return the value that has been dequed from the queue","4", pseudoQueue.dequeue().toString());
         assertTrue("The method should peek the first value in the queue", pseudoQueue.peek().equals(5));
+
+    }
+
+
+    @Test
+    public void animalShelterTest() {
+        AnimalShelter test = new AnimalShelter();
+        Animal dogObj = new Animal("dog");
+        Animal catObj = new Animal("cat");
+        Animal snake = new Animal("snake");
+        Animal hippo = new Animal("hippo");
+
+        assertEquals("dog enqueued successfully", test.enqueuAnimal(dogObj));
+        assertEquals("dog enqueued successfully", test.enqueuAnimal(dogObj));
+        assertEquals("dog enqueued successfully", test.enqueuAnimal(dogObj));
+        assertEquals("dog enqueued successfully", test.enqueuAnimal(dogObj));
+        assertEquals("cat enqueued successfully", test.enqueuAnimal(catObj));
+        assertEquals("cat enqueued successfully", test.enqueuAnimal(catObj));
+        assertEquals("cat enqueued successfully", test.enqueuAnimal(catObj));
+        assertEquals("cat enqueued successfully", test.enqueuAnimal(catObj));
+        assertEquals("dog dequed successfully", test.dequeAnimal(dogObj));
+        assertEquals("dog dequed successfully", test.dequeAnimal(dogObj));
+        assertEquals("dog dequed successfully", test.dequeAnimal(dogObj));
+        assertEquals("cat dequed successfully", test.dequeAnimal(catObj));
+        assertEquals("cat dequed successfully", test.dequeAnimal(catObj));
+        assertEquals("cat dequed successfully", test.dequeAnimal(catObj));
+        assertEquals(null, test.dequeAnimal(snake));
+        assertEquals(null, test.dequeAnimal(hippo));
+
 
     }
 
