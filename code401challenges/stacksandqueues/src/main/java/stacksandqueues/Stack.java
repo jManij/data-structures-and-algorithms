@@ -4,7 +4,7 @@ public class Stack {
     Node top;
 
     //Constructor for empty stack
-    Stack() {
+    public Stack() {
         this.top = null;
     }
 
