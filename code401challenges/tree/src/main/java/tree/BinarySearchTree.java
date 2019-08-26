@@ -46,10 +46,12 @@ public class BinarySearchTree {
     boolean contains(Node node, int value) {
         if (node == null)
             return false;
+        if ((int)node.value == value)
+            return true;
 
         if (value < (int)node.value)
             return contains(node.left, value);
-
+        else
         return contains(node.right, value);
 
     }
