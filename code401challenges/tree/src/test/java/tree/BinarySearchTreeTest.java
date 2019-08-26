@@ -27,7 +27,18 @@ public class BinarySearchTreeTest {
         assertEquals("The method should add the value and return the root node", BST.root, BST.add(BST.root, 2));
         assertEquals("The method should add the value and return the root node", BST.root, BST.add(BST.root, 4));
         assertEquals("The method should add the value and return the root node", BST.root, BST.add(BST.root, 5));
-        assertTrue(BST.contains(BST.root, 5));
+        assertTrue("The method should return true if the value is on the BST", BST.contains(BST.root, 5));
+        assertTrue("The method should return true if the value is on the BST", BST.contains(BST.root, 4));
+        assertTrue("The method should return true if the value is on the BST", BST.contains(BST.root, 3));
+        assertTrue("The method should return true if the value is on the BST", BST.contains(BST.root, 2));
+        assertTrue("The method should return true if the value is on the BST", BST.contains(BST.root, 1));
+        assertFalse("The method should return false if the value is on the BST", BST.contains(BST.root, 6));
+        assertFalse("The method should return false if the value is on the BST", BST.contains(BST.root, 7));
+        assertFalse("The method should return false if the value is on the BST", BST.contains(BST.root, 8));
+        assertFalse("The method should return false if the value is on the BST", BST.contains(BST.root, 9));
+
+
+
 
     }
 
