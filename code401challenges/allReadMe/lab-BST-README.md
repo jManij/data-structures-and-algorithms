@@ -9,3 +9,7 @@ Implment tree traversal (in order, preorder and postorder for Binary tree) and w
 O(LogN) since at worst scenario, we traverse logn times.
 O(1) for space complexity since we are not storing the contents of the tree when we traverse.
 
+#Online Resources
+https://www.geeksforgeeks.org/a-program-to-check-if-a-binary-tree-is-bst-or-not/
+
+
