@@ -1,10 +1,9 @@
 package tree;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
-public class BinaryTree {
-    Node root;
+public class BinaryTree<T> {
+    public Node root;
 
     /**
      * Constructor
@@ -12,7 +11,7 @@ public class BinaryTree {
      * Creates a tree with the given data
      * The node has left and right child
      */
-    BinaryTree (int data) {
+    public BinaryTree(T data) {
         this.root = new Node(data);
     }
 
@@ -28,14 +27,13 @@ public class BinaryTree {
      * Traversal: left, root, right
      * @param node
      */
-    ArrayList<Integer> inOrder(Node node, ArrayList<Integer> items) {
+    public ArrayList<T> inOrder(Node node, ArrayList<T> items) {
 
         if (node == null)
             return null;
 
         inOrder(node.left, items);
-        System.out.print(node.value + " ");
-        items.add((Integer) node.value);
+        items.add((T) node.value);
         inOrder(node.right, items);
 
         return items;
@@ -47,11 +45,10 @@ public class BinaryTree {
      * Traversal: root, left, right
      * @param node
      */
-    ArrayList<Integer> preOrder(Node node, ArrayList<Integer> items) {
+    ArrayList<T> preOrder(Node node, ArrayList<T> items) {
         if (node == null)
             return null;
-        System.out.print(node.value + " ");
-        items.add((Integer) node.value);
+        items.add((T) node.value);
         preOrder(node.left, items);
         preOrder(node.right, items);
 
@@ -64,16 +61,24 @@ public class BinaryTree {
      * Traversal: left, right, root
      * @param node
      */
-    ArrayList<Integer> postOrder(Node node, ArrayList<Integer> items) {
+    ArrayList<T> postOrder(Node node, ArrayList<T> items) {
         if (node == null)
             return null;
         postOrder(node.left, items);
         postOrder(node.right, items);
-        System.out.print(node.value + " ");
-        items.add((Integer) node.value);
+        items.add((T) node.value);
 
         return items;
 
     }
+
+    /**
+     * Helper method to print the contents of the tree
+     * @param node
+     */
+    public String printTree(Node node) {
+        return inOrder(node, new ArrayList<T>()).toString();
+    }
+
 
 }

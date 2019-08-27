@@ -2,6 +2,7 @@ package tree;
 
 import org.junit.Before;
 import org.junit.Test;
+import tree.utilities.FIzzBuzzTree;
 
 import java.util.ArrayList;
 
@@ -20,8 +21,9 @@ public class BinaryTreeTest {
     }
 
     @Test
-    public void inOrder() {
+    public <T> void inOrder() {
         ArrayList <Integer> items = new ArrayList<>();
+
         ArrayList <Integer> returnItems = new ArrayList<>();
         returnItems.add(4);
         returnItems.add(2);
@@ -30,6 +32,8 @@ public class BinaryTreeTest {
         returnItems.add(3);
 
         assertEquals("The method should return the arraylist in order",returnItems, tree.inOrder(tree.root, items));
+
+
 
     }
 
@@ -44,6 +48,7 @@ public class BinaryTreeTest {
         returnItems.add(3);
 
         assertEquals("The method should return the arraylist in pre-order",returnItems, tree.preOrder(tree.root, items));
+
     }
 
     @Test
