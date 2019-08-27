@@ -13,4 +13,4 @@ Conduct FizzBuzz on a tree and replace the value if divisible by 3 (Fizz), by 5 
 - O(N) for space complexity for the stack that holds the characters from the string. 
 ## Solution
 <!-- Embedded whiteboard image -->
-![](../assets/challenge-13.jpg)
+![](../assets/challenge-16.jpg)
