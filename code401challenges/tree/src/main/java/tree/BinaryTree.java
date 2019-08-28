@@ -18,7 +18,7 @@ public class BinaryTree<T> {
     /**
      * Default constructor
      */
-    BinaryTree() {
+    public BinaryTree() {
         this.root = null;
     }
 
