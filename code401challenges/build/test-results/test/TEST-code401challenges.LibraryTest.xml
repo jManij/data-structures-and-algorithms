@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="code401challenges.LibraryTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-08-21T17:48:59" hostname="38f9d3564822.ant.amazon.com" time="0.004">
+  <properties/>
+  <testcase name="testArrayShiftMethod" classname="code401challenges.LibraryTest" time="0.004"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
