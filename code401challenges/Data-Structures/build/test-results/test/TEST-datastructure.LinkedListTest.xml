@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="datastructure.LinkedListTest" tests="14" skipped="0" failures="0" errors="0" timestamp="2019-08-15T22:38:06" hostname="38f9d3564822.ant.amazon.com" time="0.024">
+  <properties/>
+  <testcase name="kthFromEndtestforSize1" classname="datastructure.LinkedListTest" time="0.013"/>
+  <testcase name="checkIncludes" classname="datastructure.LinkedListTest" time="0.001"/>
+  <testcase name="addMultipleAtEndTest" classname="datastructure.LinkedListTest" time="0.001"/>
+  <testcase name="kthFromEndTest" classname="datastructure.LinkedListTest" time="0.001"/>
+  <testcase name="addInBeforeFirstTest" classname="datastructure.LinkedListTest" time="0.001"/>
+  <testcase name="emptyList" classname="datastructure.LinkedListTest" time="0.0"/>
+  <testcase name="addInBeforeMiddleTest" classname="datastructure.LinkedListTest" time="0.0"/>
+  <testcase name="addInAfterLastTest" classname="datastructure.LinkedListTest" time="0.0"/>
+  <testcase name="checkToString" classname="datastructure.LinkedListTest" time="0.0"/>
+  <testcase name="addAtEndTest" classname="datastructure.LinkedListTest" time="0.0"/>
+  <testcase name="addInAfterMiddleTest" classname="datastructure.LinkedListTest" time="0.0"/>
+  <testcase name="mergeListAllTest" classname="datastructure.LinkedListTest" time="0.0"/>
+  <testcase name="checkInsert1" classname="datastructure.LinkedListTest" time="0.0"/>
+  <testcase name="checkInsert2" classname="datastructure.LinkedListTest" time="0.001"/>
+  <system-out><![CDATA[HEAD -> 5 -> NULL
+HEAD -> 1 -> 4 -> 7 -> 13 -> 17 -> 19 -> 23 -> 29 -> 37 -> 59 -> 60 -> NULL
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

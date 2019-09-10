@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="stacksandqueues.BracketValidation" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-08-22T02:45:46" hostname="38f9d3564822.ant.amazon.com" time="0.006">
+  <properties/>
+  <testcase name="bracketBalanceTest" classname="stacksandqueues.BracketValidation" time="0.006"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
