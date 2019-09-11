@@ -14,7 +14,7 @@ More details
 Go here
 
 ## Diagram
-Include your “Visual” here
+![](../assets/insertion.jpg)
 
 ## Algorithm
 The algorithm is less efficient than other sorting algorithms such as quiksort, heapsort, etc since it goes through each element to find the right spot. That is O(n^2). Even if the array is sorted, the algorithm goes through each elements and puts it back to the same place. When people manually sort playing cards, most use a method similar to insertion sort. 
