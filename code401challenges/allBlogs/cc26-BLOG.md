@@ -31,8 +31,8 @@ Describe in detail how the algorithm works. Include small code snippets to possi
   * Video
 
 ###### Read
-..* Article 1
-..* Article 2
+  * Article 1
+  * Article 2
 
 ###### Bookmark
-..* Website
+  * Website
