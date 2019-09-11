@@ -1,17 +1,12 @@
 ## Blog Notes: Insertion Sort
 Insertion sort is the most basic sorting algorithm available. It builds the final list by iterating making one repetition at a time. It iterates over each element and places it to it's respective position.
-Insertion sort is a simple sorting algorithm that builds the final sorted array (or list) one item at a time. It is much less efficient on large lists than more advanced algorithms such as quicksort, heapsort, or merge sort. 
-When people manually sort cards in a bridge hand, most use a method that is similar to insertion sor
 
 ## Learning Objectives
-What
-Will
-The
-Students
-Learn
-Today
+To understand how insertion sort works.
+
 
 ## Information Flow
+
 Main Point
 Supporting Points
 Another main point
@@ -22,17 +17,18 @@ Go here
 Include your “Visual” here
 
 ## Algorithm
-Describe in detail how the algorithm works. Include small code snippets to possibly support the points
+The algorithm is less efficient than other sorting algorithms such as quiksort, heapsort, etc since it goes through each element to find the right spot. That is O(n^2). Even if the array is sorted, the algorithm goes through each elements and puts it back to the same place. When people manually sort playing cards, most use a method similar to insertion sort. 
 
 ## Pseudocode
+![](../assets/challenge-18.jpg)
 
 ## Readings and References
 ###### Watch
-  * Video
+  * [Video] (https://www.youtube.com/watch?v=i-SKeOcBwko)
 
 ###### Read
-  * Article 1
-  * Article 2
+  * [Article 1] (https://www.khanacademy.org/computing/computer-science/algorithms/insertion-sort/a/insertion-sort)
+  * [Article 2] (https://medium.com/@hitherejoe/algorithms-insertion-sort-eec0e245ec42)
 
 ###### Bookmark
-  * Website
+  * [Website] (https://www.freecodecamp.org/news/everything-you-need-to-know-about-insertion-sort-algorithm/)
