@@ -1,5 +1,8 @@
 ## Blog Notes: Insertion Sort
 Insertion sort is the most basic sorting algorithm available. It builds the final list by iterating making one repetition at a time. It iterates over each element and places it to it's respective position.
+  * [Code](https://github.com/jManij/data-structures-and-algorithms/blob/master/code401challenges/sort/src/main/java/sort/InsertionSort.java)
+  * [Test](https://github.com/jManij/data-structures-and-algorithms/blob/master/code401challenges/sort/src/test/java/sort/InsertionSortTest.java)
+
 
 ## Learning Objectives
 To understand how insertion sort works.
