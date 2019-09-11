@@ -10,11 +10,11 @@ To understand how insertion sort works.
 
 ## Information Flow
 
-Main Point
-Supporting Points
-Another main point
-More details
-Go here
+* Main Point
+  * Supporting Points
+
+* Another main point
+  * More details
 
 ## Diagram
 ![](../assets/insertion.jpg)
