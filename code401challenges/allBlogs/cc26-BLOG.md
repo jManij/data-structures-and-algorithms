@@ -24,11 +24,11 @@ The algorithm is less efficient than other sorting algorithms such as quiksort, 
 
 ## Readings and References
 ###### Watch
-  * [Video] (https://www.youtube.com/watch?v=i-SKeOcBwko)
+  * [Video](https://www.youtube.com/watch?v=i-SKeOcBwko)
 
 ###### Read
-  * [Article 1] (https://www.khanacademy.org/computing/computer-science/algorithms/insertion-sort/a/insertion-sort)
-  * [Article 2] (https://medium.com/@hitherejoe/algorithms-insertion-sort-eec0e245ec42)
+  * [Article 1](https://www.khanacademy.org/computing/computer-science/algorithms/insertion-sort/a/insertion-sort)
+  * [Article 2](https://medium.com/@hitherejoe/algorithms-insertion-sort-eec0e245ec42)
 
 ###### Bookmark
-  * [Website] (https://www.freecodecamp.org/news/everything-you-need-to-know-about-insertion-sort-algorithm/)
+  * [Website](https://www.freecodecamp.org/news/everything-you-need-to-know-about-insertion-sort-algorithm/)
