@@ -1,37 +1,38 @@
-Blog Notes: Insertion Sort
-Brief description of what this algorithm is, does, and why we care.
+## Blog Notes: Insertion Sort
+Insertion sort is the most basic sorting algorithm available. It builds the final list by iterating making one repetition at a time. It iterates over each element and places it to it's respective position.
+Insertion sort is a simple sorting algorithm that builds the final sorted array (or list) one item at a time. It is much less efficient on large lists than more advanced algorithms such as quicksort, heapsort, or merge sort. 
+When people manually sort cards in a bridge hand, most use a method that is similar to insertion sor
 
-Is it more efficient than others? How does it attack the problem differently?
-
-Learning Objectives
+## Learning Objectives
 What
 Will
 The
 Students
 Learn
 Today
-Information Flow
+
+## Information Flow
 Main Point
 Supporting Points
 Another main point
 More details
 Go here
-Diagram
+
+## Diagram
 Include your “Visual” here
 
-Algorithm
+## Algorithm
 Describe in detail how the algorithm works. Include small code snippets to possibly support the points
 
-Pseudocode
+## Pseudocode
 
-Readings and References
-Watch
+## Readings and References
+###### Watch
+⋅⋅* Video
 
-Video
-Read
+###### Read
+..* Article 1
+..* Article 2
 
-Article 1
-Article 2
-Bookmark
-
-Website
+###### Bookmark
+..* Website
