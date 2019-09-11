@@ -1,38 +1,39 @@
-## Blog Notes: Insertion Sort
-Insertion sort is the most basic sorting algorithm available. It builds the final list by iterating making one repetition at a time. It iterates over each element and places it to it's respective position.
-Insertion sort is a simple sorting algorithm that builds the final sorted array (or list) one item at a time. It is much less efficient on large lists than more advanced algorithms such as quicksort, heapsort, or merge sort. 
-When people manually sort cards in a bridge hand, most use a method that is similar to insertion sor
+## Blog Notes: Quick Sort
+Quick Sort is a divide-and-conquer approach of sorting algorithm. 
+  * [Code](https://github.com/jManij/data-structures-and-algorithms/blob/master/code401challenges/sort/src/main/java/sort/QuickSort.java)
+  * [Test](https://github.com/jManij/data-structures-and-algorithms/blob/master/code401challenges/sort/src/test/java/sort/QuickSortTest.java)
+
 
 ## Learning Objectives
-What
-Will
-The
-Students
-Learn
-Today
+To understand how quick sort works.
+
 
 ## Information Flow
-Main Point
-Supporting Points
-Another main point
-More details
-Go here
+
+* Main Point
+  * Quick Sort uses divide-and-conquer approach, hence it is a recursive solution.
+
+* Another main point
+  * It divides by choosing element in the subarray, called pivot.
+  * It arranges such, the left side is smaller and the right side is greater than the pivot.
+  * Finally, conquers by recursively sorting the sub arrays. 
 
 ## Diagram
-Include your “Visual” here
+![](../assets/quick.jpg)
 
 ## Algorithm
-Describe in detail how the algorithm works. Include small code snippets to possibly support the points
+The algorithm is less efficient than other sorting algorithms such as quiksort, heapsort, etc since it goes through each element to find the right spot. That is O(n^2). Even if the array is sorted, the algorithm goes through each elements and puts it back to the same place. When people manually sort playing cards, most use a method similar to insertion sort. 
 
 ## Pseudocode
+![](../assets/cs28.png)
 
 ## Readings and References
 ###### Watch
-  * Video
+  * [Video](https://www.youtube.com/watch?v=COk73cpQbFQ&t=878s)
 
 ###### Read
-  * Article 1
-  * Article 2
+  * [Article 1](https://www.vogella.com/tutorials/JavaAlgorithmsQuicksort/article.html)
+  * [Article 2](https://www.pythoncentral.io/quick-sort-implementation-guide/)
 
 ###### Bookmark
-  * Website
+  * [Website](https://www.geeksforgeeks.org/tag/quick-sort/)
