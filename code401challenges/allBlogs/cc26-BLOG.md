@@ -28,7 +28,7 @@ Describe in detail how the algorithm works. Include small code snippets to possi
 
 ## Readings and References
 ###### Watch
-⋅⋅* Video
+  * Video
 
 ###### Read
 ..* Article 1
