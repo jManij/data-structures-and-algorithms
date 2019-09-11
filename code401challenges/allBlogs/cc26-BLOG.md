@@ -11,10 +11,10 @@ To understand how insertion sort works.
 ## Information Flow
 
 * Main Point
-  * Supporting Points
+  * Insertion sort is the most basic, off-the-shelve sorting algorithm.
 
 * Another main point
-  * More details
+  * It is useful with small data set and less complex than other algorithms. 
 
 ## Diagram
 ![](../assets/insertion.jpg)
