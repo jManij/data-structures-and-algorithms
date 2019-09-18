@@ -1,5 +1,5 @@
 # Challenge Summary
-Code Challenge: Class 33 
+Code Challenge: Class 33
 Write a function that LEFT JOINs two hashmap into a single data structure.
 
 ## Challenge Description
