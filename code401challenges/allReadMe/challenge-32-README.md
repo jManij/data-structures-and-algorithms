@@ -7,7 +7,7 @@ Write a function that checks for same nodes in two different binary trees.
 - The function returns the set of common nodes in two binary trees.
 
 ## Diagram
-![](../assets/cc31.jpg)
+![](../assets/cc32.jpg)
 
 ## Approach & Efficiency
 - Used In-order traversal of trees.
