@@ -1,17 +1,15 @@
 package graph;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class Graph {
 
-    HashMap<Vertex, ArrayList<Edge>> adjacencyList = new HashMap<>();
+
+    LinkedHashMap<Vertex, ArrayList<Edge>> adjacencyList = new LinkedHashMap<>();
     private int size = 0;
 
     public Graph() {
-        adjacencyList = new HashMap<Vertex, ArrayList<Edge>>();
+        adjacencyList = new LinkedHashMap<Vertex, ArrayList<Edge>>();
     }
 
     public Vertex addNode(Vertex newVertex) {
@@ -69,7 +67,6 @@ public class Graph {
                         item.vertex.value + "} ");
 
             }
-//            System.out.println();
             printString.append("\n");
         }
 
@@ -78,30 +75,6 @@ public class Graph {
 
     }
 
-    public static void main(String[] args) {
-//        Graph graph = new Graph();
-//        Vertex v1= new Vertex(1);
-//        Vertex v2= new Vertex(2);
-//        Vertex v3= new Vertex(3);
-//        Vertex v4= new Vertex(4);
-//
-//
-//        graph.addNode(v1);
-//        graph.addNode(v2);
-//        graph.addNode(v3);
-//        graph.addNode(v4);
-//
-//        graph.addEdge(v1, v2, 5);
-//        graph.addEdge(v1, v3, 10);
-//        graph.addEdge(v4, v1, 12);
-//
-//
-//
-//
-//        graph.print();
-//        System.out.println(graph.size);
-//        System.out.print("Hello");
-    }
 
 
 }
