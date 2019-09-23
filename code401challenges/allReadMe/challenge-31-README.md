@@ -8,7 +8,7 @@ return the first word to occur more than once in that provided string.
 - The function accepts a long String and returns the first repeated string. 
 
 ## Diagram
-![](../assets/cc31.png)
+![](../assets/cc31.jpg)
 
 ## Approach & Efficiency
 - Used Hash Table
