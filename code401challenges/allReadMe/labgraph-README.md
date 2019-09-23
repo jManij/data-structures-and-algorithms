@@ -16,7 +16,9 @@ Implment Graph data structure and implement following methods:
   
   ### GetNodes()
   - Returns all of the nodes in the graph as a collection (set, list, or similar)
-  - GetNeighbors()
+  
+  
+  ### GetNeighbors()
   - Returns a collection of nodes connected to the given node
   - Takes in a given node
   - Include the weight of the connection in the returned collection
@@ -26,10 +28,13 @@ Implment Graph data structure and implement following methods:
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
-O(LogN) since at worst scenario, we traverse logn times.
-O(1) for space complexity since we are not storing the contents of the tree when we traverse.
+- O(1) for adding node since we are not visiting previous nodes
+- O(1) for adding edge since we are not visiting previous nodes and directly adding the edge
+- O(1) for getting nodes since we are returning the collection variable that holds all the nodes
+- O(1) for size as well.
+
 
 #Online Resources
-https://www.geeksforgeeks.org/a-program-to-check-if-a-binary-tree-is-bst-or-not/
+https://www.geeksforgeeks.org/graph-and-its-representations/
 
 
