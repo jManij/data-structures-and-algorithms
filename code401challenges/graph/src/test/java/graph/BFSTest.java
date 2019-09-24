@@ -39,13 +39,23 @@ public class BFSTest {
     @Test
     public void test() {
 
-        System.out.println(graph.print());
+        BFS bfs = new BFS();
+
+
+        assertEquals("The method should return output based on BFS",
+                "A B C D E F ", bfs.getReadable(bfs.performBFS(graph, v1)));
+        assertEquals("The method should return output based on BFS",
+                "C E F ", bfs.getReadable(bfs.performBFS(graph, v3)));
+        assertEquals("The method should return output based on BFS",
+                "B ", bfs.getReadable(bfs.performBFS(graph, v2)));
+        assertEquals("The method should return output based on BFS",
+                "D ", bfs.getReadable(bfs.performBFS(graph, v4)));
+        assertEquals("The method should return output based on BFS",
+                "E ", bfs.getReadable(bfs.performBFS(graph, v5)));
+        assertEquals("The method should return output based on BFS",
+                "F ", bfs.getReadable(bfs.performBFS(graph, v6)));
 
     }
-
-
-
-
 
 
 }
