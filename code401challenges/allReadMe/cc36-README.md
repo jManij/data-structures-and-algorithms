@@ -1,4 +1,4 @@
-# Binary Search
+# Breadth First Search
 Implement Breadth First Search on the Graph
 
 ## Challenge
