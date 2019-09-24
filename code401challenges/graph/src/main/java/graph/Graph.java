@@ -23,9 +23,19 @@ public class Graph {
         //Edge Case: Check if the vertices exist. Return immediately if not!
 
         addTwoEdges(v1, v2, weight);
-//        addTwoEdges(v2, v1, weight);
+        addTwoEdges(v2, v1, weight);
         return "Vertices added";
     }
+
+
+    public String addEdgeBFS(Vertex v1, Vertex v2, int weight) {
+
+        //Edge Case: Check if the vertices exist. Return immediately if not!
+
+        addTwoEdges(v1, v2, weight);
+        return "Vertices added";
+    }
+
 
 
     private void addTwoEdges(Vertex v1, Vertex v2, int weight) {

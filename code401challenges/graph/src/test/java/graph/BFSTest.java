@@ -28,11 +28,11 @@ public class BFSTest {
         graph.addNode(v5);
         graph.addNode(v6);
 
-        graph.addEdge(v1, v2, 2);
-        graph.addEdge(v1, v3, 5);
-        graph.addEdge(v1, v4, 6);
-        graph.addEdge(v3, v5, 1);
-        graph.addEdge(v3, v6, 2);
+        graph.addEdgeBFS(v1, v2, 2);
+        graph.addEdgeBFS(v1, v3, 5);
+        graph.addEdgeBFS(v1, v4, 6);
+        graph.addEdgeBFS(v3, v5, 1);
+        graph.addEdgeBFS(v3, v6, 2);
 
     }
 
