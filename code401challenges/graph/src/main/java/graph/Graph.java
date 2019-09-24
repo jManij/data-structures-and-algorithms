@@ -23,7 +23,7 @@ public class Graph {
         //Edge Case: Check if the vertices exist. Return immediately if not!
 
         addTwoEdges(v1, v2, weight);
-        addTwoEdges(v2, v1, weight);
+//        addTwoEdges(v2, v1, weight);
         return "Vertices added";
     }
 
