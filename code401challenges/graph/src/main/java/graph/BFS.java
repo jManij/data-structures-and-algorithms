@@ -37,6 +37,11 @@ public class BFS {
     }
 
 
+    /**
+     * Returns a readable format representing the graph. This is mainly for testing purpose.
+     * @param vertexArrayList
+     * @return
+     */
     public String getReadable(ArrayList<Vertex> vertexArrayList) {
             StringBuilder readableFormat = new StringBuilder();
 
