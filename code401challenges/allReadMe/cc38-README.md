@@ -1,18 +1,20 @@
 # Code Challenge 37
-Check if a direct flight is possible.
+Implement DFS on a graph.
 
 ## Challenge
-Given a graph, and an array of cities, find out if the direct flight is possible between the cities.
-Also, find the total cost.
+Given a graph, and the vertex to start from, implement Depth-First-Search on that graph.
 
 
 ## Approach & Efficiency
-- Created an output class that has boolean value and integer value (this represents the total weight)
-- Get the arraylist of all the neighbors to the starting city.
-- Check to see if the next city in the array of cities is contained within the arraylist of neighbors.
-- If it does not exist, return immediately with new output annotating boolean false and cost equal to zero.
-- If it exists, iterate over the edges and add the weight that belongs to the vertex (city).
-- Time is O(N) since we might have to visit all the nodes. Space is O(N).
+- Created arraylist of vertices to hold the return value, arraylist of edges to hold 
+  all neighbors, HashMap to track the visit status of the vertex and Stack to hold working vertex.
+- Immediately add the first provided vertex to the stack, update the visit status.
+- Add the newly popped vertex into the return arrayList that holds the vertices.
+- Get the neighbors and check if they have been visited, if not push them into stack.
+- Repeat until stack is empty.
+- Return the arraylist that holds the vertices.
+- Space is O(N) 
+- Time is O(N) since we might be visiting all the nodes. 
 
 ## Solution
-![](../assets/cc37.jpg)
+![](../assets/cc38.jpg)
