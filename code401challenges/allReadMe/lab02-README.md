@@ -1,6 +1,6 @@
 # Shift an Array
 Insert and Shift an array in middle at index.
-[Link to code](../src/main/java/code401challenges/ArrayShift.java)
+[Link to code](https://github.com/AyaaBe95/data-structures-and-algorithms401/blob/main/app/src/main/java/data/structures/and/algorithms401/shiftArray.java)
 
 ## Challenge
 Given an array of integers and value to be inserted,
@@ -13,4 +13,4 @@ the method inserts the value on the middle of the given array.
 - Time complexity and space complexity is O(n)
 
 ## Solution
-![](../assets/lab-02.png)
+![](https://github.com/AyaaBe95/data-structures-and-algorithms401/blob/main/assests/shiftArray.jpeg)
